@@ -71,6 +71,9 @@ projects[signage_uiowa_panes][subdir] = "custom"
 projects[signage_uiowa_panes][download][type] = git
 projects[signage_uiowa_panes][download][url] = git@github.com:ITS-UofIowa/signage_uiowa_panes.git
 
+projects[strongarm][version] = "2.0"
+projects[strongarm][subdir] = "contrib"
+
 projects[themekey][version] = "2.5"
 projects[themekey][subdir] = "contrib"
 

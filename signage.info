@@ -37,6 +37,7 @@ dependencies[] = path
 dependencies[] = rdf
 dependencies[] = search
 dependencies[] = shortcut
+dependencies[] = strongarm
 dependencies[] = system
 dependencies[] = taxonomy
 dependencies[] = text
