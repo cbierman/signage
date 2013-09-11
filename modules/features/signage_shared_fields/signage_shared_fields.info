@@ -1,0 +1,10 @@
+name = Signage Shared Fields
+description = Shared fields for the signage project
+core = 7.x
+package = Signage
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = body
+features[field_base][] = og_group_ref

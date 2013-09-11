@@ -1,0 +1,15 @@
+name = Signage Groups
+description = The main group content type for signage
+core = 7.x
+package = Signage
+dependencies[] = features
+dependencies[] = list
+dependencies[] = og_ui
+dependencies[] = options
+dependencies[] = signage_shared_fields
+dependencies[] = text
+features[features_api][] = api:2
+features[field_base][] = group_group
+features[field_instance][] = node-signage_group-body
+features[field_instance][] = node-signage_group-group_group
+features[node][] = signage_group

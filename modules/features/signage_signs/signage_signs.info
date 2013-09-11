@@ -1,0 +1,14 @@
+name = Signage Signs
+core = 7.x
+package = Signage
+dependencies[] = entityreference
+dependencies[] = features
+dependencies[] = og
+dependencies[] = og_ui
+dependencies[] = options
+dependencies[] = signage_shared_fields
+features[features_api][] = api:2
+features[field_instance][] = node-signage_sign-og_group_ref
+features[node][] = signage_sign
+features_exclude[field_base][field_slideshow_slides] = field_slideshow_slides
+features_exclude[field_instance][node-signage_sign-field_slideshow_slides] = node-signage_sign-field_slideshow_slides

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Signage Default Panelizer Settings feature.
+ */
+
+include_once 'signage_default_panelizer_settings.features.inc';

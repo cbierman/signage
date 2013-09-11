@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file
+ * signage_default_panelizer_settings.features.inc
+ */
+
+/**
+ * Implements hook_ctools_plugin_api().
+ */
+function signage_default_panelizer_settings_ctools_plugin_api($module = NULL, $api = NULL) {
+  if ($module == "panelizer" && $api == "panelizer") {
+    return array("version" => "1");
+  }
+}

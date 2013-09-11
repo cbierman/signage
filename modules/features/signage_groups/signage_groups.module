@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Signage Groups feature.
+ */
+
+include_once 'signage_groups.features.inc';
