@@ -1,0 +1,4 @@
+modules/custom/*
+modules/contrib/*
+themes/*
+libraries/*
