@@ -79,7 +79,7 @@ function signage_install() {
     $query->values($block);
   }
   $query->execute();
-  
+
   // From shortcut.install, add shortcuts to the default set on install
   $shortcut_set = shortcut_set_load(SHORTCUT_DEFAULT_SET_NAME);
   $shortcut_set->links = NULL;
