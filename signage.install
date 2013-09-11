@@ -6,7 +6,7 @@
  */
 function signage_install() {
   // Enable some signage blocks.
-  $default_theme = 'sky';
+  $default_theme = 'signage_theme';
   $admin_theme = 'seven';
   // disable all themes
   db_update('system')
