@@ -91,6 +91,7 @@ dependencies[] = views_slideshow_cycle
 dependencies[] = views_ui
 ; Features
 dependencies[] = features
+dependencies[] = signage_default_panelizer_settings
 dependencies[] = signage_groups
 dependencies[] = signage_shared_fields
 dependencies[] = signage_signs
