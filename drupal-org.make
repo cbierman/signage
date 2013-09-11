@@ -4,9 +4,10 @@ api = "2"
 
 ; +++++ Modules +++++
 
-projects[bongo][version] = "" ; TODO add version
+projects[bongo][type] = "module"
 projects[bongo][subdir] = "contrib"
 projects[bongo][download][type] = git
+projects[bongo][download][branch] = 7.x-1.x
 projects[bongo][download][url] = http://git.drupal.org/sandbox/bneil/1807738.git
 
 projects[ctools][version] = "1.3"
@@ -60,12 +61,12 @@ projects[panelizer][subdir] = "contrib"
 projects[panels][version] = "3.3"
 projects[panels][subdir] = "contrib"
 
-projects[signage_panes][version] = "" ; TODO add version
+projects[signage_panes][type] = "module"
 projects[signage_panes][subdir] = "custom"
 projects[signage_panes][download][type] = git
 projects[signage_panes][download][url] = git@github.com:ITS-UofIowa/signage_panes.git
 
-projects[signage_uiowa_panes][version] = "" ; TODO add version
+projects[signage_uiowa_panes][type] = "module"
 projects[signage_uiowa_panes][subdir] = "custom"
 projects[signage_uiowa_panes][download][type] = git
 projects[signage_uiowa_panes][download][url] = git@github.com:ITS-UofIowa/signage_uiowa_panes.git
@@ -104,7 +105,7 @@ projects[adaptivetheme][subdir] = "contrib"
 projects[signage_theme][type] = "theme"
 projects[signage_theme][subdir] = "contrib"
 projects[signage_theme][download][type] = git
-projects[signage_theme][download][url] = https://github.com/ITS-UofIowa/signage_theme.git
+projects[signage_theme][download][url] = git@github.com:ITS-UofIowa/signage_theme.git
 
 ; +++++ Libraries +++++
 
