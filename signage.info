@@ -15,8 +15,6 @@ dependencies[] = ctools_custom_content
 dependencies[] = page_manager
 dependencies[] = views_content
 ; Core
-dependencies[] = block
-dependencies[] = color
 dependencies[] = contextual
 dependencies[] = dashboard
 dependencies[] = dblog
@@ -35,7 +33,6 @@ dependencies[] = options
 dependencies[] = overlay
 dependencies[] = path
 dependencies[] = rdf
-dependencies[] = search
 dependencies[] = shortcut
 dependencies[] = system
 dependencies[] = taxonomy
