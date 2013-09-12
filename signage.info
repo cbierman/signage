@@ -76,10 +76,6 @@ dependencies[] = panels
 dependencies[] = panels_ipe
 ; Signage
 dependencies[] = signage_panes
-; ThemeKey
-dependencies[] = themekey
-dependencies[] = themekey_compat
-dependencies[] = themekey_ui
 ; UIowa
 dependencies[] = signage_uiowa_panes
 ; Views

@@ -74,9 +74,6 @@ projects[signage_uiowa_panes][download][url] = git@github.com:ITS-UofIowa/signag
 projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = "contrib"
 
-projects[themekey][version] = "2.5"
-projects[themekey][subdir] = "contrib"
-
 projects[draggableviews][version] = "2.0"
 projects[draggableviews][subdir] = "contrib"
 
