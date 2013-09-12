@@ -74,7 +74,7 @@ function signage_default_panelizer_settings_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'panelizer_defaults_node_signage_template';
   $strongarm->value = array(
-    'status' => 0,
+    'status' => 1,
     'view modes' => array(
       'page_manager' => array(
         'status' => 0,
@@ -82,8 +82,8 @@ function signage_default_panelizer_settings_strongarm() {
         'choice' => 0,
       ),
       'default' => array(
-        'status' => 0,
-        'default' => 0,
+        'status' => 1,
+        'default' => 1,
         'choice' => 0,
       ),
       'teaser' => array(
