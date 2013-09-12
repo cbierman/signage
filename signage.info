@@ -70,6 +70,8 @@ dependencies[] = token
 dependencies[] = panelizer
 dependencies[] = panels
 dependencies[] = panels_ipe
+; Rules
+dependencies[] = rules
 ; Signage
 dependencies[] = signage_panes
 ; Strongarm

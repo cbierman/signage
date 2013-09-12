@@ -61,6 +61,9 @@ projects[panelizer][subdir] = "contrib"
 projects[panels][version] = "3.3"
 projects[panels][subdir] = "contrib"
 
+projects[rules][version] = "2.3"
+projects[rules][subdir] = "contrib"
+
 projects[signage_panes][type] = "module"
 projects[signage_panes][subdir] = "custom"
 projects[signage_panes][download][type] = git
