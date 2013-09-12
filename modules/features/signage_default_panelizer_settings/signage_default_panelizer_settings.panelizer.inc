@@ -339,7 +339,7 @@ function signage_default_panelizer_settings_panelizer_defaults() {
   $panelizer->link_to_entity = FALSE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'hydrogen';
+  $display->layout = 'helium';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
