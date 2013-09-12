@@ -148,6 +148,8 @@ function signage_slides_views_default_views() {
   $handler->display->display_options['filters']['field_slide_schedule_value2_1']['granularity'] = 'minute';
   $handler->display->display_options['pane_title'] = 'Slideshow for Sign';
   $handler->display->display_options['pane_description'] = 'Display slides that have been referenced on this sign\'s page';
+  $handler->display->display_options['pane_category']['name'] = 'Slideshows';
+  $handler->display->display_options['pane_category']['weight'] = '0';
   $handler->display->display_options['allow']['use_pager'] = 0;
   $handler->display->display_options['allow']['items_per_page'] = 0;
   $handler->display->display_options['allow']['offset'] = 0;
