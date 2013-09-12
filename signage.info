@@ -37,7 +37,6 @@ dependencies[] = path
 dependencies[] = rdf
 dependencies[] = search
 dependencies[] = shortcut
-dependencies[] = strongarm
 dependencies[] = system
 dependencies[] = taxonomy
 dependencies[] = text
@@ -76,6 +75,8 @@ dependencies[] = panels
 dependencies[] = panels_ipe
 ; Signage
 dependencies[] = signage_panes
+; Strongarm
+dependencies[] = strongarm
 ; UIowa
 dependencies[] = signage_uiowa_panes
 ; Views
