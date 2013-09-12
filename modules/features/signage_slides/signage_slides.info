@@ -25,6 +25,7 @@ features[flexslider_optionset][] = signage_slideshow
 features[node][] = signage_slide
 features[page_manager_pages][] = signage_sign_slides
 features[views_view][] = signage_sign_slides_overview
+features[views_view][] = signage_slideshow_slide_selection
 features_exclude[dependencies][ctools] = ctools
 features_exclude[dependencies][features] = features
 features_exclude[dependencies][image] = image
