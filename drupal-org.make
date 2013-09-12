@@ -77,17 +77,11 @@ projects[strongarm][subdir] = "contrib"
 projects[draggableviews][version] = "2.0"
 projects[draggableviews][subdir] = "contrib"
 
-projects[eva][version] = "1.2"
-projects[eva][subdir] = "contrib"
-
 projects[views][version] = "3.7"
 projects[views][subdir] = "contrib"
 
 projects[views_bulk_operations][version] = "3.1"
 projects[views_bulk_operations][subdir] = "contrib"
-
-projects[views_slideshow][version] = "3.0"
-projects[views_slideshow][subdir] = "contrib"
 
 ; +++++ Themes +++++
 
