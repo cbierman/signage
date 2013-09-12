@@ -358,6 +358,28 @@ function signage_default_panelizer_settings_panelizer_defaults() {
   $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-8';
+    $pane->panel = 'contentmain';
+    $pane->type = 'views_panes';
+    $pane->subtype = 'signage_sign_slides_overview-panel_pane_1';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'relationship_entity_from_field:field_signage_template_sign_ref-node-node_1',
+      ),
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-8'] = $pane;
+    $display->panels['contentmain'][0] = 'new-8';
+    $pane = new stdClass();
+    $pane->pid = 'new-9';
     $pane->panel = 'headerfirst';
     $pane->type = 'uinameplate';
     $pane->subtype = 'uinameplate';
@@ -375,10 +397,10 @@ function signage_default_panelizer_settings_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-8'] = $pane;
-    $display->panels['headerfirst'][0] = 'new-8';
+    $display->content['new-9'] = $pane;
+    $display->panels['headerfirst'][0] = 'new-9';
     $pane = new stdClass();
-    $pane->pid = 'new-9';
+    $pane->pid = 'new-10';
     $pane->panel = 'headerfirst';
     $pane->type = 'node_title';
     $pane->subtype = 'node_title';
@@ -401,10 +423,10 @@ function signage_default_panelizer_settings_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = array();
-    $display->content['new-9'] = $pane;
-    $display->panels['headerfirst'][1] = 'new-9';
+    $display->content['new-10'] = $pane;
+    $display->panels['headerfirst'][1] = 'new-10';
     $pane = new stdClass();
-    $pane->pid = 'new-10';
+    $pane->pid = 'new-11';
     $pane->panel = 'headersecond';
     $pane->type = 'date_time';
     $pane->subtype = 'date_time';
@@ -422,8 +444,33 @@ function signage_default_panelizer_settings_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-10'] = $pane;
-    $display->panels['headersecond'][0] = 'new-10';
+    $display->content['new-11'] = $pane;
+    $display->panels['headersecond'][0] = 'new-11';
+    $pane = new stdClass();
+    $pane->pid = 'new-12';
+    $pane->panel = 'sidebar';
+    $pane->type = 'bongo_predictions';
+    $pane->subtype = 'bongo_predictions';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'stop' => '125',
+      'predictions_to_show' => '10',
+      'show_agency' => '0',
+      'show_refresh' => 0,
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-12'] = $pane;
+    $display->panels['sidebar'][0] = 'new-12';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
