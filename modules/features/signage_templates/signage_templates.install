@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Install code for the Signage Templates feature.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function signage_templates_install() {
+  // Populate the default signage template pathauto pattern.
+  variable_set('pathauto_node_signage_template_pattern', '[node:field-signage-template-sign-ref:url:path]/[node:content-type]/[node:title]');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function signage_templates_uninstall() {
+  variable_del('pathauto_node_signage_template_pattern');
+}

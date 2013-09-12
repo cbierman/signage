@@ -7,6 +7,7 @@ dependencies[] = flexslider
 dependencies[] = flexslider_views
 dependencies[] = options
 dependencies[] = page_manager
+dependencies[] = pathauto
 dependencies[] = signage_signs
 dependencies[] = views
 dependencies[] = views_content

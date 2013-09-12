@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Install code for the Signage Groups feature.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function signage_groups_install() {
+  // Populate the default signage group pathauto pattern.
+  variable_set('pathauto_node_signage_group_pattern', '[node:title]');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function signage_groups_uninstall() {
+  variable_del('pathauto_node_signage_group_pattern');
+}

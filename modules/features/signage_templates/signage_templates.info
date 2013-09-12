@@ -4,6 +4,7 @@ package = Signage
 dependencies[] = date
 dependencies[] = og_ui
 dependencies[] = page_manager
+dependencies[] = pathauto
 dependencies[] = signage_shared_fields
 dependencies[] = views
 dependencies[] = views_content

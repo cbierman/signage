@@ -6,6 +6,7 @@ dependencies[] = features
 dependencies[] = list
 dependencies[] = og_ui
 dependencies[] = options
+dependencies[] = pathauto
 dependencies[] = signage_shared_fields
 dependencies[] = text
 dependencies[] = views

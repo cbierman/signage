@@ -1,0 +1,20 @@
+<?php
+/**
+ * @file
+ * Install code for the Signage Slides feature.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function signage_slides_install() {
+  // Populate the default signage slide pathauto pattern.
+  variable_set('pathauto_node_signage_slide_pattern', '[node:og_group_ref]/[node:content-type]/[node:title]');
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function signage_slides_uninstall() {
+  variable_del('pathauto_node_signage_slide_pattern');
+}
