@@ -88,16 +88,6 @@ projects[views_bulk_operations][subdir] = "contrib"
 
 ; +++++ Themes +++++
 
-; sky
-projects[sky][type] = "theme"
-projects[sky][version] = "3.0-rc1"
-projects[sky][subdir] = "contrib"
-
-; adaptivetheme
-projects[adaptivetheme][type] = "theme"
-projects[adaptivetheme][version] = "3.1"
-projects[adaptivetheme][subdir] = "contrib"
-
 ; Signage Theme
 projects[signage_theme][type] = "theme"
 projects[signage_theme][subdir] = "contrib"
