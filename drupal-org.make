@@ -13,8 +13,8 @@ projects[bongo][download][url] = http://git.drupal.org/sandbox/bneil/1807738.git
 projects[ctools][version] = "1.3"
 projects[ctools][subdir] = "contrib"
 
-projects[custom_breadcrumbs][version] = "2.0-alpha3"
-projects[custom_breadcrumbs][subdir] = "contrib"
+projects[crumbs][version] = "2.0-beta9"
+projects[crumbs][subdir] = "contrib"
 
 projects[date][version] = "2.6"
 projects[date][subdir] = "contrib"

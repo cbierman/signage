@@ -1,6 +1,7 @@
 name = Signage Core
 core = 7.x
 package = Signage
+dependencies[] = crumbs
 dependencies[] = page_manager
 dependencies[] = strongarm
 dependencies[] = views
@@ -10,6 +11,9 @@ features[ctools][] = strongarm:strongarm:1
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[page_manager_pages][] = front_page
+features[variable][] = crumbs_node_parent_patterns
+features[variable][] = crumbs_override_theme_breadcrumb
+features[variable][] = crumbs_weights
 features[variable][] = site_frontpage
 features[views_view][] = signage_all_groups
 features_exclude[dependencies][ctools] = ctools

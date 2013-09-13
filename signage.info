@@ -39,8 +39,8 @@ dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = toolbar
 dependencies[] = user
-; Custom breadcrumbs
-dependencies[] = custom_breadcrumbs
+; Crumbs
+dependencies[] = views_content
 ; Date/Time
 dependencies[] = date
 dependencies[] = date_api
