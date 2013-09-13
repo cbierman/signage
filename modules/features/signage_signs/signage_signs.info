@@ -9,7 +9,6 @@ dependencies[] = og_ui
 dependencies[] = options
 dependencies[] = pathauto
 dependencies[] = signage_shared_fields
-dependencies[] = signage_templates
 features[features_api][] = api:2
 features[field_instance][] = node-signage_sign-og_group_ref
 features[node][] = signage_sign
