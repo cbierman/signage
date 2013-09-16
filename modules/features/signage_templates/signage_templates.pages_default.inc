@@ -29,11 +29,14 @@ function signage_templates_default_page_manager_pages() {
         'not' => FALSE,
       ),
       1 => array(
-        'name' => 'perm',
+        'name' => 'node_access',
         'settings' => array(
-          'perm' => 'create signage_template content',
+          'type' => 'update',
         ),
-        'context' => 'logged-in-user',
+        'context' => array(
+          0 => 'logged-in-user',
+          1 => 'argument_entity_id:node_1',
+        ),
         'not' => FALSE,
       ),
     ),
