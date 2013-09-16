@@ -61,7 +61,7 @@ function signage_templates_default_rules_configuration() {
             "USING" : {
               "type" : "node",
               "param_type" : "signage_template",
-              "param_title" : "Default Template",
+              "param_title" : "Default Template - [node:title]",
               "param_author" : [ "site:current-user" ]
             },
             "PROVIDE" : { "entity_created" : { "entity_created" : "Created entity" } }
