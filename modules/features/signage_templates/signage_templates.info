@@ -24,6 +24,7 @@ features[node][] = signage_template
 features[page_manager_pages][] = signage_sign_templates
 features[rules_config][] = rules_signage_delete_sign_delete_all_templates
 features[rules_config][] = rules_signage_new_sign_create_default_template
+features[variable][] = field_bundle_settings_node__signage_template
 features[views_view][] = signage_active_sign_template
 features_exclude[dependencies][entityreference] = entityreference
 features_exclude[dependencies][features] = features
