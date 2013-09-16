@@ -37,7 +37,7 @@ function signage_templates_field_default_field_instances() {
     'entity_type' => 'node',
     'field_name' => 'field_signage_template_sign_ref',
     'label' => 'Sign',
-    'required' => 0,
+    'required' => 1,
     'settings' => array(
       'behaviors' => array(
         'prepopulate' => array(
