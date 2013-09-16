@@ -5,3 +5,15 @@
  */
 
 include_once 'signage_templates.features.inc';
+
+/**
+ * Implements hook_pre_features_rebuild().
+ */
+// TODO: See if there's a better way to handle the panelizer
+// permissions stuff:
+// https://drupal.org/node/1549608#comment-7465814
+function signage_templates_pre_features_rebuild($component) {
+  if ($component == 'user_permission') {
+    drupal_static_reset('panelizer_entity_plugin_get_handler');
+  }
+}
