@@ -47,6 +47,7 @@ features[user_role][] = webmaster
 features[variable][] = crumbs_node_parent_patterns
 features[variable][] = crumbs_override_theme_breadcrumb
 features[variable][] = crumbs_weights
+features[variable][] = page_manager_node_view_disabled
 features[variable][] = site_frontpage
 features[views_view][] = signage_all_groups
 features_exclude[dependencies][ctools] = ctools
