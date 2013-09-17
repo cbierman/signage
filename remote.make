@@ -8,7 +8,7 @@ projects[drupal][version] = "7.x"
 
 projects[signage][type] = profile
 projects[signage][download][type] = git
-projects[signage][download][url] = "git@github.com:ITS-UofIowa/signage.git"
+projects[signage][download][url] = "https://github.com/ITS-UofIowa/signage.git"
 projects[signage][download][branch] = master
 
 
