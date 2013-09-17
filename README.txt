@@ -33,6 +33,14 @@ Install the site as usual, using 'Signage' as the site's profile.
   shared and referenced between any sign in a group.
 
 
+-- EXTENDING --
+If you want to add new panes of content for your templates, consider using the
+Fieldable Panels Panes module or writing custom Ctools content types for that
+data. An example of this is in the Signage Panes module:
+https://github.com/ITS-UofIowa/signage_panes which creates the date/time pane.
+
+Templates are using the standard Panels In Place Editor for layout, so you
+should be able to add any Drupal blocks or views panes as well.
 
 -- OVERRIDING DEFAULTS --
 
