@@ -9,7 +9,7 @@ of tools and provides some defaults for those projects as features.
 
 * Download and install drush: http://drupal.org/project/drush.
 Run the following command:
-drush make http://lb.cm/signs-master signage --prepare-install --working-copy
+drush make http://lb.cm/mGF signage --prepare-install --working-copy
 
 to download everything (core, the signage profile, contrib modules & libraries)
 into a folder called 'signage'.
@@ -23,6 +23,7 @@ Install the site as usual, using 'Signage' as the site's profile.
 
 -- OVERRIDING DEFAULTS --
 
+    --
 
 
 -- SUPPORT --
