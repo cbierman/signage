@@ -102,7 +102,6 @@ function signage_core_user_default_permissions() {
     'name' => 'administer menu',
     'roles' => array(
       'administrator' => 'administrator',
-      'webmaster' => 'webmaster',
     ),
     'module' => 'menu',
   );
