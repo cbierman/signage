@@ -2,14 +2,6 @@
 core = "7.x"
 api = "2"
 
-; +++++ Modules +++++
-
-projects[bongo][type] = "module"
-projects[bongo][subdir] = "contrib"
-projects[bongo][download][type] = git
-projects[bongo][download][branch] = 7.x-1.x
-projects[bongo][download][url] = http://git.drupal.org/sandbox/bneil/1807738.git
-
 projects[ctools][version] = "1.3"
 projects[ctools][subdir] = "contrib"
 
@@ -68,11 +60,6 @@ projects[signage_panes][type] = "module"
 projects[signage_panes][subdir] = "custom"
 projects[signage_panes][download][type] = git
 projects[signage_panes][download][url] = git@github.com:ITS-UofIowa/signage_panes.git
-
-projects[signage_uiowa_panes][type] = "module"
-projects[signage_uiowa_panes][subdir] = "custom"
-projects[signage_uiowa_panes][download][type] = git
-projects[signage_uiowa_panes][download][url] = git@github.com:ITS-UofIowa/signage_uiowa_panes.git
 
 projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = "contrib"

@@ -6,9 +6,6 @@ core = "7.x"
 ; ----------
 ; Dependencies
 ; ----------
-; Bongo
-dependencies[] = bongo
-dependencies[] = bongo_panes
 ; Chaos tool suite
 dependencies[] = ctools
 dependencies[] = ctools_custom_content
@@ -75,8 +72,6 @@ dependencies[] = rules
 dependencies[] = signage_panes
 ; Strongarm
 dependencies[] = strongarm
-; UIowa
-dependencies[] = signage_uiowa_panes
 ; Views
 dependencies[] = draggableviews
 dependencies[] = views
