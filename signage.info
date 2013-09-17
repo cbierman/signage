@@ -35,7 +35,6 @@ dependencies[] = path
 dependencies[] = rdf
 dependencies[] = shortcut
 dependencies[] = system
-dependencies[] = taxonomy
 dependencies[] = text
 dependencies[] = toolbar
 dependencies[] = user
