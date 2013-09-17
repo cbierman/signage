@@ -59,7 +59,7 @@ projects[rules][subdir] = "contrib"
 projects[signage_panes][type] = "module"
 projects[signage_panes][subdir] = "custom"
 projects[signage_panes][download][type] = git
-projects[signage_panes][download][url] = git@github.com:ITS-UofIowa/signage_panes.git
+projects[signage_panes][download][url] = https://github.com/ITS-UofIowa/signage_panes.git
 
 projects[strongarm][version] = "2.0"
 projects[strongarm][subdir] = "contrib"
@@ -79,7 +79,7 @@ projects[views_bulk_operations][subdir] = "contrib"
 projects[signage_theme][type] = "theme"
 projects[signage_theme][subdir] = "contrib"
 projects[signage_theme][download][type] = git
-projects[signage_theme][download][url] = git@github.com:ITS-UofIowa/signage_theme.git
+projects[signage_theme][download][url] = https://github.com/ITS-UofIowa/signage_theme.git
 
 ; +++++ Libraries +++++
 
