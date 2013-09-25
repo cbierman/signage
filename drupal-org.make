@@ -20,6 +20,9 @@ projects[profiler_builder][subdir] = "contrib"
 projects[features][version] = "2.0-rc3"
 projects[features][subdir] = "contrib"
 
+projects[fieldabl_panels_panes][version] = "1.5"
+projects[fieldabl_panels_panes][subdir] = "contrib"
+
 projects[entityreference][version] = "1.0"
 projects[entityreference][subdir] = "contrib"
 
