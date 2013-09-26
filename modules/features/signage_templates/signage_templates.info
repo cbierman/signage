@@ -47,6 +47,7 @@ features[user_permission][] = edit any signage_template content
 features[user_permission][] = edit own signage_template content
 features[variable][] = field_bundle_settings_node__signage_template
 features[variable][] = panelizer_defaults_node_signage_template
+features[variable][] = panelizer_node:signage_template_allowed_layouts
 features[views_view][] = signage_active_sign_template
 features_exclude[dependencies][entityreference] = entityreference
 features_exclude[dependencies][features] = features
