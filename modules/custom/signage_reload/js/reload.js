@@ -49,15 +49,13 @@
 
   // Update all Availability on the page
   Drupal.reload.updateWindow = function() {
-    if (hostReachable()) {
-      console.log(hostReachable());
+    if (hostReachable(window.location.hostname + Drupal.settings.basePath)) {
       // Loading a new page might create error alerts for already running ajax.
       // Suppress them: https://drupal.org/node/1232416#comment-7361080
       window.alert = function() {};
       document.location.reload(true);
     }
     else {
-      console.log(hostReachable());
     }
   };
 
