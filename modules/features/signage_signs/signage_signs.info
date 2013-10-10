@@ -24,6 +24,7 @@ features[og_features_permission][] = node:signage_group:delete own signage_sign 
 features[og_features_permission][] = node:signage_group:update any signage_sign content
 features[og_features_permission][] = node:signage_group:update own signage_sign content
 features[panelizer_defaults][] = node:signage_sign:default
+features[panelizer_defaults][] = node:signage_sign:default:default
 features[user_permission][] = create signage_sign content
 features[user_permission][] = delete any signage_sign content
 features[user_permission][] = delete own signage_sign content
