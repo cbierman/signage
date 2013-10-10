@@ -1,0 +1,41 @@
+<?php
+/**
+ * @file
+ * Code for the Signage Reload functionality.
+ */
+
+/**
+ * Implements hook_libraries_info().
+ */
+function signage_reload_libraries_info() {
+  $libraries['hostReachable'] = array(
+    'name' => 'hostReachable',
+    'vendor url' => 'https://gist.github.com/jpsilvashy/5725579',
+    'download url' => 'https://gist.github.com/jpsilvashy/5725579',
+    'version' => 1.0,
+    'files' => array(
+      'js' => array('hostReachable.js'),
+    ),
+  );
+  return $libraries;
+}
+
+//dpm(libraries_load('hostReachable'));
+
+/*
+ * Implements hook_node_view().
+ */
+function signage_reload_node_view($node, $view_mode, $langcode) {
+  if($node->type == 'signage_sign' && $view_mode == 'full' && user_is_anonymous()) {
+    libraries_load('hostReachable');
+    drupal_add_js(drupal_get_path('module', 'signage_reload') . '/js/reload.js');
+  }
+
+}
+
+/*
+ * Implements hook_node_view_alter().
+ */
+function signage_reload_node_view_alter(&$build) {
+  //dpm($build, 'build');
+}
