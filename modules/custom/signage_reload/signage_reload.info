@@ -2,4 +2,3 @@ name = Signage Reload
 core = 7.x
 package = Signage
 dependencies[] = libraries
-dependencies[] = node
