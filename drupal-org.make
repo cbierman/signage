@@ -96,6 +96,13 @@ libraries[flexslider][destination] = "libraries"
 libraries[flexslider][download][type] = "get"
 libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/flexslider1.zip"
 
+; hostReachable
+libraries[hostreachable][directory_name] = "hostReachable"
+libraries[hostreachable][type] = "library"
+libraries[hostreachable][destination] = "libraries"
+libraries[hostreachable][download][type] = "get"
+libraries[hostreachable][download][url] = "https://gist.github.com/5725579.git"
+
 ; +++++ Patches +++++
 
 projects[ctools][patch][] = "http://drupal.org/files/page-manager-admin-paths-1120028-14.patch"

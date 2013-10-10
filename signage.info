@@ -70,6 +70,7 @@ dependencies[] = panels_ipe
 dependencies[] = rules
 ; Signage
 dependencies[] = signage_panes
+dependencies[] = signage_reload
 ; Strongarm
 dependencies[] = strongarm
 ; Views
