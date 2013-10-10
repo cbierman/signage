@@ -100,8 +100,8 @@ libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/
 libraries[hostreachable][directory_name] = "hostReachable"
 libraries[hostreachable][type] = "library"
 libraries[hostreachable][destination] = "libraries"
-libraries[hostreachable][download][type] = "git"
-libraries[hostreachable][download][url] = "https://gist.github.com/5725579.git"
+libraries[hostreachable][download][type] = "get"
+libraries[hostreachable][download][url] = "https://gist.github.com/jpsilvashy/5725579/raw/cc3ffeb8027d2e25a3866b72ffbe4a5db9b78378/hostReachable.js"
 
 ; +++++ Patches +++++
 
