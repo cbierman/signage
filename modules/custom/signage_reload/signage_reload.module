@@ -20,8 +20,6 @@ function signage_reload_libraries_info() {
   return $libraries;
 }
 
-//dpm(libraries_load('hostReachable'));
-
 /*
  * Implements hook_node_view().
  */
@@ -30,7 +28,6 @@ function signage_reload_node_view($node, $view_mode, $langcode) {
     libraries_load('hostReachable');
     drupal_add_js(drupal_get_path('module', 'signage_reload') . '/js/reload.js');
   }
-
 }
 
 /*
