@@ -101,7 +101,7 @@ libraries[hostreachable][directory_name] = "hostReachable"
 libraries[hostreachable][type] = "library"
 libraries[hostreachable][destination] = "libraries"
 libraries[hostreachable][download][type] = "get"
-libraries[hostreachable][download][url] = "https://gist.github.com/jpsilvashy/5725579/raw/cc3ffeb8027d2e25a3866b72ffbe4a5db9b78378/hostReachable.js"
+libraries[hostreachable][download][url] = "https://gist.github.com/brandonneil/6921434/raw/f783957f866570946cc74de0fde600264fa0e553/hostReachable.js"
 
 ; +++++ Patches +++++
 
