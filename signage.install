@@ -1,11 +1,17 @@
 <?php
 /**
+ * @file
+ * Install, update and uninstall functions for the signage install profile.
+ */
+
+/**
  * Implements hook_install().
  *
  * Perform actions to set up the site for this profile.
  */
 function signage_install() {
-    // Add text formats.
+  $t = get_t();
+  // Add text formats.
   $filtered_html_format = array(
     'format' => 'filtered_html',
     'name' => 'Filtered HTML',
@@ -64,25 +70,25 @@ function signage_install() {
   // Enable some signage blocks.
   $default_theme = 'signage_theme';
   $admin_theme = 'seven';
-  // disable all themes
+  // Disable all themes.
   db_update('system')
     ->fields(array('status' => 0))
     ->condition('type', 'theme')
     ->execute();
-  // enable $default_theme
+  // Enable $default_theme.
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
     ->condition('name', $default_theme)
     ->execute();
-  // enable $admin_theme
+  // Enable $admin_theme.
   db_update('system')
     ->fields(array('status' => 1))
     ->condition('type', 'theme')
     ->condition('name', $admin_theme)
     ->execute();
   variable_set('admin_theme', $admin_theme);
-  // activate admin theme when editing a node
+  // Activate admin theme when editing a node.
   variable_set('node_admin_theme', '1');
   variable_set('theme_default', $default_theme);
   $blocks = array(
@@ -127,27 +133,38 @@ function signage_install() {
       'cache' => -1,
     ),
   );
-  // drop system / user blocks to ensure correct building
+  // Drop system / user blocks to ensure correct building.
   db_delete('block')->condition('module', 'system')->execute();
   db_delete('block')->condition('module', 'user')->execute();
-  // add in our blocks defined above
-  $query = db_insert('block')->fields(array('module', 'delta', 'theme', 'status', 'weight', 'region', 'pages', 'cache'));
+  // Add in our blocks defined above.
+  $query = db_insert('block')->fields(array(
+    'module',
+    'delta',
+    'theme',
+    'status',
+    'weight',
+    'region',
+    'pages',
+    'cache',
+  ));
   foreach ($blocks as $block) {
     $query->values($block);
   }
   $query->execute();
 
-  // From shortcut.install, add shortcuts to the default set on install
+  // From shortcut.install, add shortcuts to the default set on install.
   $shortcut_set = shortcut_set_load(SHORTCUT_DEFAULT_SET_NAME);
   $shortcut_set->links = NULL;
   $shortcut_set->links = array(
     array(
       'link_path' => 'admin/appearance/settings',
-      'link_title' => st('Theme'),
+      'link_title' => $t('Theme'),
       'weight' => -17,
     ),
   );
-  shortcut_set_save($shortcut_set);// Create a default role for site administrators, with all available permissions assigned.
+  shortcut_set_save($shortcut_set);
+  // Create a default role for site administrators, with all available
+  // permissions assigned.
   $admin_role = new stdClass();
   $admin_role->name = 'administrator';
   $admin_role->weight = 10;
@@ -162,17 +179,17 @@ function signage_install() {
     ->execute();
   // Update the menu router information.
   menu_rebuild();
-  // revert features to ensure they are all installed
+  // Revert features to ensure they are all installed.
   $features = array(
     'signage_shared_fields',
     'signage_groups',
     'signage_signs',
     'signage_slides',
-    'signage_templates'
+    'signage_templates',
   );
   features_revert($features);
-  // ignore any rebuild messages
+  // Ignore any rebuild messages.
   node_access_needs_rebuild(FALSE);
-  // ignore any other install messages
+  // Ignore any other install messages.
   drupal_get_messages();
 }
