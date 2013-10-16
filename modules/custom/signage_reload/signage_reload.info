@@ -1,4 +1,5 @@
 name = Signage Reload
 core = 7.x
+description = Reload sign nodes on a consistent basis.
 package = Signage
 dependencies[] = libraries
