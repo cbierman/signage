@@ -20,11 +20,11 @@ function signage_reload_libraries_info() {
   return $libraries;
 }
 
-/*
+/**
  * Implements hook_node_view().
  */
 function signage_reload_node_view($node, $view_mode, $langcode) {
-  if($node->type == 'signage_sign' && $view_mode == 'full' && user_is_anonymous()) {
+  if ($node->type == 'signage_sign' && $view_mode == 'full' && user_is_anonymous()) {
     libraries_load('hostReachable');
     drupal_add_js(drupal_get_path('module', 'signage_reload') . '/js/reload.js');
   }
