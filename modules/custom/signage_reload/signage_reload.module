@@ -10,8 +10,8 @@
 function signage_reload_libraries_info() {
   $libraries['hostReachable'] = array(
     'name' => 'hostReachable',
-    'vendor url' => 'https://gist.github.com/jpsilvashy/5725579',
-    'download url' => 'https://gist.github.com/jpsilvashy/5725579',
+    'vendor url' => 'https://gist.github.com/brandonneil/6921434',
+    'download url' => 'https://gist.github.com/brandonneil/6921434',
     'version' => 1.0,
     'files' => array(
       'js' => array('hostReachable.js'),
