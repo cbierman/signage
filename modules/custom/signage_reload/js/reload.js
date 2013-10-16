@@ -5,6 +5,9 @@
 
  // Namespace jQuery to avoid conflicts.
 (function($) {
+  // Fix to hide AJAX error alert messages.
+  // http://drupal.org/node/1232416#comment-6667014
+  window.alert = function(arg) { if (window.console && console.log) { console.log(arg);}};
   // Define the behavior.
   Drupal.reload = function() {
     // Call updateAvailability every two minutes.
@@ -23,9 +26,6 @@
   // Update all Availability on the page
   Drupal.reload.updateWindow = function() {
     if (hostReachable(window.location.hostname + Drupal.settings.basePath)) {
-      // Loading a new page might create error alerts for already running ajax.
-      // Suppress them: https://drupal.org/node/1232416#comment-7361080
-      window.alert = function() {};
       document.location.reload(true);
     }
     else {
