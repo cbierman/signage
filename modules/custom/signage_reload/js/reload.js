@@ -10,8 +10,8 @@
   window.alert = function(arg) { if (window.console && console.log) { console.log(arg);}};
   // Define the behavior.
   Drupal.reload = function() {
-    // Call updateAvailability every two minutes.
-    setInterval(Drupal.reload.updateWindow, 12000);
+    // Call updateAvailability every ten minutes.
+    setInterval(Drupal.reload.updateWindow, 600000);
   };
 
   // Attach reload behavior.
