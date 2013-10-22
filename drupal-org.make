@@ -76,6 +76,9 @@ projects[views][subdir] = "contrib"
 projects[views_bulk_operations][version] = "3.1"
 projects[views_bulk_operations][subdir] = "contrib"
 
+projects[views_ticker][version] = "2.0"
+projects[views_ticker][subdir] = "contrib"
+
 projects[views_xml_backend][version] = "1.0-alpha4"
 projects[views_xml_backend][subdir] = "contrib"
 
