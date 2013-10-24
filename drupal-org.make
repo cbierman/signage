@@ -11,9 +11,6 @@ projects[crumbs][subdir] = "contrib"
 projects[date][version] = "2.6"
 projects[date][subdir] = "contrib"
 
-projects[devel][version] = "1.3"
-projects[devel][subdir] = "contrib"
-
 projects[eva][version] = "1.2"
 projects[eva][subdir] = "contrib"
 
