@@ -77,84 +77,6 @@ function signage_templates_views_default_views() {
     'signage_template' => 'signage_template',
   );
 
-  /* Display: Content pane */
-  $handler = $view->new_display('panel_pane', 'Content pane', 'panel_pane_1');
-  $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'some';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '1';
-  $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
-  $handler->display->display_options['filter_groups']['groups'] = array(
-    1 => 'AND',
-    2 => 'OR',
-    3 => 'OR',
-  );
-  $handler->display->display_options['defaults']['filters'] = FALSE;
-  /* Filter criterion: Content: Published */
-  $handler->display->display_options['filters']['status']['id'] = 'status';
-  $handler->display->display_options['filters']['status']['table'] = 'node';
-  $handler->display->display_options['filters']['status']['field'] = 'status';
-  $handler->display->display_options['filters']['status']['value'] = 1;
-  $handler->display->display_options['filters']['status']['group'] = 1;
-  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'signage_template' => 'signage_template',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: Scheduling -  start date (field_template_schedule) */
-  $handler->display->display_options['filters']['field_template_schedule_value_1']['id'] = 'field_template_schedule_value_1';
-  $handler->display->display_options['filters']['field_template_schedule_value_1']['table'] = 'field_data_field_template_schedule';
-  $handler->display->display_options['filters']['field_template_schedule_value_1']['field'] = 'field_template_schedule_value';
-  $handler->display->display_options['filters']['field_template_schedule_value_1']['operator'] = 'empty';
-  $handler->display->display_options['filters']['field_template_schedule_value_1']['group'] = 2;
-  $handler->display->display_options['filters']['field_template_schedule_value_1']['granularity'] = 'minute';
-  /* Filter criterion: Content: Scheduling -  start date (field_template_schedule) */
-  $handler->display->display_options['filters']['field_template_schedule_value']['id'] = 'field_template_schedule_value';
-  $handler->display->display_options['filters']['field_template_schedule_value']['table'] = 'field_data_field_template_schedule';
-  $handler->display->display_options['filters']['field_template_schedule_value']['field'] = 'field_template_schedule_value';
-  $handler->display->display_options['filters']['field_template_schedule_value']['operator'] = '<=';
-  $handler->display->display_options['filters']['field_template_schedule_value']['group'] = 2;
-  $handler->display->display_options['filters']['field_template_schedule_value']['granularity'] = 'minute';
-  $handler->display->display_options['filters']['field_template_schedule_value']['default_date'] = 'now';
-  /* Filter criterion: Content: Scheduling - end date (field_template_schedule:value2) */
-  $handler->display->display_options['filters']['field_template_schedule_value2']['id'] = 'field_template_schedule_value2';
-  $handler->display->display_options['filters']['field_template_schedule_value2']['table'] = 'field_data_field_template_schedule';
-  $handler->display->display_options['filters']['field_template_schedule_value2']['field'] = 'field_template_schedule_value2';
-  $handler->display->display_options['filters']['field_template_schedule_value2']['operator'] = '>=';
-  $handler->display->display_options['filters']['field_template_schedule_value2']['group'] = 3;
-  $handler->display->display_options['filters']['field_template_schedule_value2']['granularity'] = 'minute';
-  $handler->display->display_options['filters']['field_template_schedule_value2']['default_date'] = 'now';
-  /* Filter criterion: Content: Scheduling - end date (field_template_schedule:value2) */
-  $handler->display->display_options['filters']['field_template_schedule_value2_1']['id'] = 'field_template_schedule_value2_1';
-  $handler->display->display_options['filters']['field_template_schedule_value2_1']['table'] = 'field_data_field_template_schedule';
-  $handler->display->display_options['filters']['field_template_schedule_value2_1']['field'] = 'field_template_schedule_value2';
-  $handler->display->display_options['filters']['field_template_schedule_value2_1']['operator'] = 'empty';
-  $handler->display->display_options['filters']['field_template_schedule_value2_1']['group'] = 3;
-  $handler->display->display_options['filters']['field_template_schedule_value2_1']['granularity'] = 'minute';
-  $handler->display->display_options['allow']['use_pager'] = 0;
-  $handler->display->display_options['allow']['items_per_page'] = 0;
-  $handler->display->display_options['allow']['offset'] = 0;
-  $handler->display->display_options['allow']['link_to_view'] = 0;
-  $handler->display->display_options['allow']['more_link'] = 0;
-  $handler->display->display_options['allow']['path_override'] = 0;
-  $handler->display->display_options['allow']['title_override'] = 0;
-  $handler->display->display_options['allow']['exposed_form'] = 'exposed_form';
-  $handler->display->display_options['allow']['fields_override'] = 0;
-  $handler->display->display_options['argument_input'] = array(
-    'nid' => array(
-      'type' => 'context',
-      'context' => 'entity:node.nid',
-      'context_optional' => 0,
-      'panel' => '0',
-      'fixed' => '',
-      'label' => 'Content: Nid',
-    ),
-  );
-
   /* Display: Sorting interface */
   $handler = $view->new_display('panel_pane', 'Sorting interface', 'panel_pane_2');
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
@@ -241,6 +163,14 @@ function signage_templates_views_default_views() {
       'label' => 'Content: Nid',
     ),
   );
+
+  /* Display: EVA Field */
+  $handler = $view->new_display('entity_view', 'EVA Field', 'entity_view_1');
+  $handler->display->display_options['entity_type'] = 'node';
+  $handler->display->display_options['bundles'] = array(
+    0 => 'signage_sign',
+  );
+  $handler->display->display_options['show_title'] = 0;
   $export['signage_active_sign_template'] = $view;
 
   return $export;

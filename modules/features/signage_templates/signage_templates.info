@@ -4,6 +4,7 @@ package = Signage
 dependencies[] = date
 dependencies[] = entity
 dependencies[] = node
+dependencies[] = eva
 dependencies[] = og_ui
 dependencies[] = page_manager
 dependencies[] = panelizer
