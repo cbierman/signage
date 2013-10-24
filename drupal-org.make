@@ -14,6 +14,9 @@ projects[date][subdir] = "contrib"
 projects[devel][version] = "1.3"
 projects[devel][subdir] = "contrib"
 
+projects[eva][version] = "1.2"
+projects[eva][subdir] = "contrib"
+
 projects[profiler_builder][version] = "1.0"
 projects[profiler_builder][subdir] = "contrib"
 
