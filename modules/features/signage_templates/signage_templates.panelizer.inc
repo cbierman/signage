@@ -105,7 +105,7 @@ function signage_templates_panelizer_defaults() {
   $panelizer->link_to_entity = FALSE;
   $panelizer->extra = array();
   $display = new panels_display();
-  $display->layout = 'nitrogen';
+  $display->layout = 'helium';
   $display->layout_settings = array();
   $display->panel_settings = array(
     'style_settings' => array(
@@ -147,16 +147,11 @@ function signage_templates_panelizer_defaults() {
     $pane = new stdClass();
     $pane->pid = 'new-3';
     $pane->panel = 'headerfirst';
-    $pane->type = 'node_title';
-    $pane->subtype = 'node_title';
+    $pane->type = 'uinameplate';
+    $pane->subtype = 'uinameplate';
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'link' => 0,
-      'markup' => 'h1',
-      'id' => '',
-      'class' => '',
-      'context' => 'relationship_entity_from_field:field_signage_template_sign_ref-node-node_1',
       'override_title' => 1,
       'override_title_text' => '',
     );
@@ -172,6 +167,32 @@ function signage_templates_panelizer_defaults() {
     $display->panels['headerfirst'][0] = 'new-3';
     $pane = new stdClass();
     $pane->pid = 'new-4';
+    $pane->panel = 'headerfirst';
+    $pane->type = 'node_title';
+    $pane->subtype = 'node_title';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+      'class' => '',
+      'context' => 'relationship_entity_from_field:field_signage_template_sign_ref-node-node_1',
+      'id' => '',
+      'link' => 0,
+      'markup' => 'h1',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
+    $display->content['new-4'] = $pane;
+    $display->panels['headerfirst'][1] = 'new-4';
+    $pane = new stdClass();
+    $pane->pid = 'new-5';
     $pane->panel = 'headersecond';
     $pane->type = 'date_time';
     $pane->subtype = 'date_time';
@@ -189,8 +210,29 @@ function signage_templates_panelizer_defaults() {
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-4'] = $pane;
-    $display->panels['headersecond'][0] = 'new-4';
+    $display->content['new-5'] = $pane;
+    $display->panels['headersecond'][0] = 'new-5';
+    $pane = new stdClass();
+    $pane->pid = 'new-6';
+    $pane->panel = 'sidebar';
+    $pane->type = 'weather';
+    $pane->subtype = 'weather';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = array();
+    $display->content['new-6'] = $pane;
+    $display->panels['sidebar'][0] = 'new-6';
   $display->hide_title = PANELS_TITLE_NONE;
   $display->title_pane = '0';
   $panelizer->display = $display;
