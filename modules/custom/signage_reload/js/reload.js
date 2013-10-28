@@ -11,7 +11,7 @@
   // Define the behavior.
   Drupal.reload = function() {
     // Call updateAvailability every ten minutes.
-    setInterval(Drupal.reload.updateWindow, 120000);
+    setInterval(Drupal.reload.updateWindow, 600000);
   };
 
   // Attach reload behavior.
