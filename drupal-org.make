@@ -109,5 +109,5 @@ libraries[hostreachable][download][url] = "https://gist.github.com/brandonneil/6
 ; +++++ Patches +++++
 
 projects[ctools][patch][] = "http://drupal.org/files/page-manager-admin-paths-1120028-14.patch"
-projects[views_ticker][patch][] = "https://drupal.org/files/views_ticker-Fixed_coding_standards-1395054-11.patch"
+projects[views_ticker][patch][] = "http://drupal.org/files/views_ticker-Fixed_coding_standards-1395054-11.patch"
 
