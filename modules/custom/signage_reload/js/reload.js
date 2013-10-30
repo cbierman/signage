@@ -23,7 +23,7 @@
     }
   };
 
-  // Update all Availability on the page
+  // Update all Availability on the page.
   Drupal.reload.updateWindow = function() {
     if (hostReachable(window.location.hostname + Drupal.settings.basePath)) {
       document.location.reload(true);
