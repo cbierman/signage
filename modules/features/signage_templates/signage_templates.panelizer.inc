@@ -222,6 +222,9 @@ function signage_templates_panelizer_defaults() {
     $pane->configuration = array(
       'override_title' => 0,
       'override_title_text' => '',
+      'three_day' => 0,
+      'current' => 1,
+      '24_hour' => 0,
     );
     $pane->cache = array();
     $pane->style = array(
