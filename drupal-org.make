@@ -5,10 +5,10 @@ api = "2"
 projects[ctools][version] = "1.3"
 projects[ctools][subdir] = "contrib"
 
-projects[crumbs][version] = "2.0-beta9"
+projects[crumbs][version] = "2.0-beta13"
 projects[crumbs][subdir] = "contrib"
 
-projects[date][version] = "2.6"
+projects[date][version] = "2.7"
 projects[date][subdir] = "contrib"
 
 projects[eva][version] = "1.2"
@@ -17,28 +17,28 @@ projects[eva][subdir] = "contrib"
 projects[profiler_builder][version] = "1.0"
 projects[profiler_builder][subdir] = "contrib"
 
-projects[features][version] = "2.0-rc3"
+projects[features][version] = "2.0"
 projects[features][subdir] = "contrib"
 
 projects[fieldable_panels_panes][version] = "1.5"
 projects[fieldable_panels_panes][subdir] = "contrib"
 
-projects[entityreference][version] = "1.0"
+projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = "contrib"
 
-projects[entityreference_prepopulate][version] = "1.3"
+projects[entityreference_prepopulate][version] = "1.4"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
 projects[flexslider][version] = "2.0-alpha3"
 projects[flexslider][subdir] = "contrib"
 
-projects[og][version] = "2.3"
+projects[og][version] = "2.4"
 projects[og][subdir] = "contrib"
 
 projects[diff][version] = "3.2"
 projects[diff][subdir] = "contrib"
 
-projects[entity][version] = "1.2"
+projects[entity][version] = "1.3"
 projects[entity][subdir] = "contrib"
 
 projects[libraries][version] = "2.1"
@@ -56,7 +56,7 @@ projects[panelizer][subdir] = "contrib"
 projects[panels][version] = "3.3"
 projects[panels][subdir] = "contrib"
 
-projects[rules][version] = "2.3"
+projects[rules][version] = "2.6 "
 projects[rules][subdir] = "contrib"
 
 projects[signage_panes][type] = "module"
