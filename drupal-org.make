@@ -5,7 +5,7 @@ api = "2"
 projects[ctools][version] = "1.3"
 projects[ctools][subdir] = "contrib"
 
-projects[crumbs][version] = "2.0-beta13"
+projects[crumbs][version] = "2.0-beta9"
 projects[crumbs][subdir] = "contrib"
 
 projects[date][version] = "2.7"
@@ -26,13 +26,13 @@ projects[fieldable_panels_panes][subdir] = "contrib"
 projects[entityreference][version] = "1.1"
 projects[entityreference][subdir] = "contrib"
 
-projects[entityreference_prepopulate][version] = "1.4"
+projects[entityreference_prepopulate][version] = "1.3"
 projects[entityreference_prepopulate][subdir] = "contrib"
 
 projects[flexslider][version] = "2.0-alpha3"
 projects[flexslider][subdir] = "contrib"
 
-projects[og][version] = "2.4"
+projects[og][version] = "2.3"
 projects[og][subdir] = "contrib"
 
 projects[diff][version] = "3.2"
@@ -56,7 +56,7 @@ projects[panelizer][subdir] = "contrib"
 projects[panels][version] = "3.3"
 projects[panels][subdir] = "contrib"
 
-projects[rules][version] = "2.6 "
+projects[rules][version] = "2.6"
 projects[rules][subdir] = "contrib"
 
 projects[signage_panes][type] = "module"
@@ -97,7 +97,7 @@ libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][type] = "library"
 libraries[flexslider][destination] = "libraries"
 libraries[flexslider][download][type] = "get"
-libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/version/2.2.zip"
+libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/version/2.2.2.zip"
 
 ; hostReachable
 libraries[hostreachable][directory_name] = "hostReachable"
