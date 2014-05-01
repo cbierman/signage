@@ -11,9 +11,10 @@ include_once 'signage_groups.features.inc';
 /**
  * implements hook_admin_paths()
  */
+
 function signage_groups_admin_paths() {
   $paths = array(
-    'node/*/all-slides' => TRUE
+    'node/*/all-slides' => TRUE,
   );
   return $paths;
 }
