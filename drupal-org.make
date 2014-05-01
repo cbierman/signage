@@ -8,7 +8,7 @@ projects[ctools][subdir] = "contrib"
 projects[crumbs][version] = "2.0-beta9"
 projects[crumbs][subdir] = "contrib"
 
-projects[date][version] = "2.7"
+projects[date][version] = "2.6"
 projects[date][subdir] = "contrib"
 
 projects[eva][version] = "1.2"
@@ -17,13 +17,13 @@ projects[eva][subdir] = "contrib"
 projects[profiler_builder][version] = "1.0"
 projects[profiler_builder][subdir] = "contrib"
 
-projects[features][version] = "2.0"
+projects[features][version] = "2.0-rc3"
 projects[features][subdir] = "contrib"
 
 projects[fieldable_panels_panes][version] = "1.5"
 projects[fieldable_panels_panes][subdir] = "contrib"
 
-projects[entityreference][version] = "1.1"
+projects[entityreference][version] = "1.0"
 projects[entityreference][subdir] = "contrib"
 
 projects[entityreference_prepopulate][version] = "1.3"
@@ -38,7 +38,7 @@ projects[og][subdir] = "contrib"
 projects[diff][version] = "3.2"
 projects[diff][subdir] = "contrib"
 
-projects[entity][version] = "1.3"
+projects[entity][version] = "1.2"
 projects[entity][subdir] = "contrib"
 
 projects[libraries][version] = "2.1"
@@ -56,7 +56,7 @@ projects[panelizer][subdir] = "contrib"
 projects[panels][version] = "3.3"
 projects[panels][subdir] = "contrib"
 
-projects[rules][version] = "2.6"
+projects[rules][version] = "2.3"
 projects[rules][subdir] = "contrib"
 
 projects[signage_panes][type] = "module"
@@ -97,7 +97,7 @@ libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][type] = "library"
 libraries[flexslider][destination] = "libraries"
 libraries[flexslider][download][type] = "get"
-libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/version/2.2.2.zip"
+libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/version/2.2.zip"
 
 ; hostReachable
 libraries[hostreachable][directory_name] = "hostReachable"
