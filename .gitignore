@@ -3,3 +3,4 @@ modules/features/signage_panes/
 modules/custom/signage_panes/
 themes/*
 libraries/*
+.DS_Store
