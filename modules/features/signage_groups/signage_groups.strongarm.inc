@@ -34,7 +34,6 @@ function signage_groups_strongarm() {
       ),
     ),
   );
-
   $export['panelizer_defaults_node_signage_group'] = $strongarm;
 
   return $export;
