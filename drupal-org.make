@@ -8,7 +8,7 @@ projects[ctools][subdir] = "contrib"
 projects[crumbs][version] = "2.0-beta9"
 projects[crumbs][subdir] = "contrib"
 
-projects[date][version] = "2.6"
+projects[date][version] = "2.8"
 projects[date][subdir] = "contrib"
 
 projects[eva][version] = "1.2"
