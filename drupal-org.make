@@ -2,7 +2,7 @@
 core = "7.x"
 api = "2"
 
-projects[ctools][version] = "1.3"
+projects[ctools][version] = "1.4"
 projects[ctools][subdir] = "contrib"
 
 projects[crumbs][version] = "2.0-beta9"
@@ -96,8 +96,9 @@ projects[signage_theme][download][url] = https://github.com/ITS-UofIowa/signage_
 libraries[flexslider][directory_name] = "flexslider"
 libraries[flexslider][type] = "library"
 libraries[flexslider][destination] = "libraries"
-libraries[flexslider][download][type] = "get"
-libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider/archive/version/2.2.zip"
+libraries[flexslider][download][type] = "git"
+libraries[flexslider][download][url] = "https://github.com/woothemes/FlexSlider.git"
+libraries[flexslider][download][tag] = 2.2.2
 
 ; hostReachable
 libraries[hostreachable][directory_name] = "hostReachable"
